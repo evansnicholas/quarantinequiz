@@ -16,22 +16,22 @@
   <body>
   <script>
     const leaderboard = [
-      { name: 'De Hamsters', points: 0 },
-      { name: 'Illuminated', points: 0 },
-      { name: 'Ill-informed', points: 0 },
-      { name: 'Quarantanne & Quaranthur', points: 0 },
-      { name: 'Doñas Coronitas', points: 0 },
-      { name: 'Desperatos', points: 0 },
-      { name: 'The Chickens', points: 0 },
-      { name: 'De Blijf-Thuismussen', points: 0 },
-      { name: 'Covidiots', points: 0 },
-      { name: 'Quarantino\'s', points: 0 },
-      { name: 'Het Wangetje van de Snoek', points: 0 },
-      { name: 'De WC Rolletjes', points: 0 },
-      { name: 'Pandamics', points: 0 }
+      { name: 'Ill-informed', points: 8 },
+      { name: 'Quarantanne & Quaranthur', points: 7 },
+      { name: 'Doñas Coronitas', points: 7 },
+      { name: 'Desperatos', points: 7 },
+      { name: 'The Chickens', points: 8 },
+      { name: 'Illuminated', points: 7 },
+      { name: 'De Hamsters', points: 9 },
+      { name: 'De Blijf-Thuismussen', points: 7 },
+      { name: 'Covidiots', points: 10 },
+      { name: 'Quarantino\'s', points: 4 },
+      { name: 'Het Wangetje van de Snoek', points: 8 },
+      { name: 'De WC Rolletjes', points: 8 },
+      { name: 'Pandamics', points: 5 }
     ]
     const leaderboardElem = document.getElementById("leaderboard");
-    const listElems = leaderboard.forEach((entry, index) => {
+    const listElems = leaderboard.sortBy((a, b) => b.points - a.points).forEach((entry, index) => {
       const e = document.createElement('li');
       e.classList.add("pb3");
       e.innerHTML = `
