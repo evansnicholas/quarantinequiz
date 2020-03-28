@@ -31,7 +31,7 @@
       { name: 'Pandamics', points: 5 }
     ]
     const leaderboardElem = document.getElementById("leaderboard");
-    const listElems = leaderboard.sortBy((a, b) => b.points - a.points).forEach((entry, index) => {
+    const listElems = leaderboard.sort((a, b) => b.points - a.points).forEach((entry, index) => {
       const e = document.createElement('li');
       e.classList.add("pb3");
       e.innerHTML = `
