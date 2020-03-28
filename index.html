@@ -16,19 +16,19 @@
   <body>
   <script>
     const leaderboard = [
-      { name: 'Ill-informed', points: 8 },
-      { name: 'Quarantanne & Quaranthur', points: 7 },
-      { name: 'Doñas Coronitas', points: 7 },
-      { name: 'Desperatos', points: 7 },
-      { name: 'The Chickens', points: 8 },
-      { name: 'Illuminated', points: 7 },
-      { name: 'De Hamsters', points: 9 },
-      { name: 'De Blijf-Thuismussen', points: 7 },
-      { name: 'Covidiots', points: 10 },
-      { name: 'Quarantino\'s', points: 4 },
-      { name: 'Het Wangetje van de Snoek', points: 8 },
-      { name: 'De WC Rolletjes', points: 8 },
-      { name: 'Pandamics', points: 5 }
+      { name: 'Ill-informed', points: 10 },
+      { name: 'Quarantanne & Quaranthur', points: 9 },
+      { name: 'Doñas Coronitas', points: 9 },
+      { name: 'Desperatos', points: 10 },
+      { name: 'The Chickens', points: 9 },
+      { name: 'Illuminated', points: 8 },
+      { name: 'De Hamsters', points: 12 },
+      { name: 'De Blijf-Thuismussen', points: 8 },
+      { name: 'Covidiots', points: 13 },
+      { name: 'Quarantino\'s', points: 7 },
+      { name: 'Het Wangetje van de Snoek', points: 11 },
+      { name: 'De WC Rolletjes', points: 13 },
+      { name: 'Pandamics', points: 6 }
     ]
     const leaderboardElem = document.getElementById("leaderboard");
     const listElems = leaderboard.sort((a, b) => b.points - a.points).forEach((entry, index) => {
